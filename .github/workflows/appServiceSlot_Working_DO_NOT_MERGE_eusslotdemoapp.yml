@@ -22,7 +22,7 @@ jobs:
         dotnet-version: '2.0.x'
 
     - name: Build with dotnet
-      run: dotnet build --configuration Release
+      run: dotnet build .\appServiceSlot\SlotDemo.sln --configuration Release
 
     - name: dotnet publish
       run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
